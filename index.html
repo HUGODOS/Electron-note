@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script src="./assets/js/vendor/foundation.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Note compiler V1</title>
+</head>
+	<body>
+		<div class="top-bar">
+		  <div class="top-bar-left">
+		    <ul class="menu">
+		      <li class="menu-text"><a href="index.html">Home</a></li>
+		      <li class="menu-text"><a href="page2.html">History</a></li>
+		      <li class="menu-text"><a href="page3.html" target="_blank">No Answer?</a></li>
+		      <li class="menu-text"><a href="Q:\Company Work\Customer Services\Support\URLs on FTP.txt" target="_blank">URLS</a></li>
+		    </ul>
+		  </div>
+		   <div class="top-bar-right">
+		    <ul class="menu">
+		      <li><button type="button" class="button" id="reset">Reset User</button></li>
+		    </ul>
+		  </div>
+		</div>
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x">
+			<div class="cell fade">
+		  		<h2>User: </h2>
+		  		<input type="text" id="userName">
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x">
+			<div class="cell hidden">
+				<h2>Customer name:</h2>
+				<input type="text" id="custName">
+			</div>
+		</div>
+		<div class="grid-x grid-padding-x">
+			<div class="cell hidden">
+		  		<h2>Notes:</h2>
+		  		<textarea id="notes"></textarea>
+		  		<button type="button" class="button" id="copy">Copy</button>
+			</div>
+		</div> 	
+	</div>
+
+	<div class="grid-container">
+		<div class="grid-x grid-margin-x">
+			<div class="cell">
+				<h2>Reminders</h2>				
+			</div>
+			<div class="cell">
+				<ul class="tabs" data-tabs id="example-tabs">
+					<li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Outstanding</a></li>
+					<li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Completed</a></li>
+					<li class="button right"><a>New Reminder</a></li>
+				</ul>
+			</div>
+			<div class="cell">
+				<div class="tabs-content" data-tabs-content="example-tabs">
+				  <div class="tabs-panel is-active" id="panel1">
+				  	<p>hello</p>
+				  </div>
+				  <div class="tabs-panel" id="panel2">
+				  	<p>there</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$(document).foundation();
+	</script>
+	</body>
+</html>

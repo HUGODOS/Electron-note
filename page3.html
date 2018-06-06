@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<script>window.$ = window.jQuery = require('jquery');</script>
+	<script src="./assets/js/vendor/foundation.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Tried To Call</title>
+</head>
+<body>
+	<div class="top-bar">
+	  <div class="top-bar-left">
+	    <ul class="menu">
+	      <li class="menu-text"><a href="#" id="close-btn">Close</a></li>
+	    </ul>
+	  </div>
+	</div>
+	<div class="grid-x grid-padding-x">
+		<div class="cell">
+			<h2>Customer name:</h2>
+			<input type="text" id="custName">
+		</div>
+	</div>
+	<div class="grid-x grid-padding-x">
+		<div class="cell">
+			<h3>Did you leave a message?</h3>
+			<form action="" method="get" accept-charset="utf-8">
+				<input type="radio" value="No" name="vm"> No
+				<input type="radio" value="Yes" name="vm"> Yes
+			</form>
+			<div id="informed">
+				<h3>Informed I Will: </h3>
+				<select>
+				  <option value="Asked To Give Us A Call">Asked To Give Us A Call</option>
+				  <option value="Call Back In">Call Back In</option>
+				</select>
+				<input type="text" placeholder="Enter Minutes">			
+			</div>
+
+	  		<button type="button" class="button" id="copy">Copy And Close Window</button>
+		</div>
+	</div>
+
+	<script src="assets/js/missedCall.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
