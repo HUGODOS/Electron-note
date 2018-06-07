@@ -21,6 +21,9 @@ function copy(){
 }
 
 function storage(date){
+	var obj = {
+		table : []
+	}
 	if (fs.existsSync("./history.json")) {
 		fs.readFile('history.json', 'utf8', function readFileCallback(err, data){
     		if (err){
@@ -53,10 +56,6 @@ function  load(){
 	customerName.focus();
 }
 function init(){
-
-	var obj = {
-		table : []
-	}
 
 	if (store.get("userName.un") === ""){
 		$(".hidden").hide();
