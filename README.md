@@ -1,4 +1,7 @@
 # Electron-note
+
+[![Build Status](https://img.shields.io/badge/Build-in%20progres-brightgreen.svg)]
+
 Quick note complier that stores history of notes and makes them searchable. 
 
 Install instructions:
