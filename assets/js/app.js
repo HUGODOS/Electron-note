@@ -21,7 +21,7 @@ function copy(){
 }
 
 function storage(date){
-	var obj = {
+	let obj = {
 		table : []
 	}
 	if (fs.existsSync("./history.json")) {
