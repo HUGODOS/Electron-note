@@ -10,8 +10,6 @@ Electron
 Node Js
 Moment Js
 ```
-[![BuildStatus](https://img.shields.io/badge/Build-in%20progress-brightgreen.svg)]()
-[![Progress](https://img.shields.io/badge/Progress-50%25-yellow.svg)]()
 
 Quick note complier that stores history of notes and makes them searchable.
 
